@@ -1,0 +1,32 @@
+# rustdesk.yml
+
+# Server configuration
+server:
+  # The address of the server
+  address: "0.0.0.0"  # Listen on all interfaces
+  # The port for the server
+  port: 21112          # Default port for RustDesk
+
+# Database configuration
+database:
+  # Path to the SQLite database file
+  path: "/var/lib/rustdesk/rustdesk.db"
+
+# Logging configuration
+logging:
+  # Log level (debug, info, warn, error)
+  level: "info"
+  # Log file path
+  file: "/var/log/rustdesk/rustdesk.log"
+
+# Security settings
+security:
+  # Enable or disable TLS
+  tls: true
+  # Path to the TLS certificate
+  cert: "/etc/ssl/certs/rustdesk.crt"
+  # Path to the TLS key
+  key: "/etc/ssl/private/rustdesk.key"
+
+# Optional: Additional settings
+# You can add more configuration options as needed
